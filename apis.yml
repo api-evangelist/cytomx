@@ -1,7 +1,31 @@
 aid: cytomx
-name: Cytomx
-description: Cytomx is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cytomx.png
+name: CytomX Therapeutics
+description: >-
+  CytomX Therapeutics is a clinical-stage, oncology-focused biopharmaceutical
+  company based in South San Francisco, California, pioneering a novel class of masked,
+  conditionally activated biologic therapeutics built on its proprietary Probody platform.
+  The Probody technology is engineered to remain inactive in healthy tissue and to
+  become selectively unmasked and activated within the tumor microenvironment, with
+  the goal of producing more potent, less toxic cancer medicines. The company's
+  pipeline spans antibody-drug conjugates (ADCs), T-cell engaging bispecific antibodies,
+  and immunotherapies, advanced both internally and through partnerships with major
+  pharmaceutical companies. CytomX is a publicly traded company (Nasdaq CTMX). This
+  API Evangelist profile was surfaced as a portfolio company of Canaan Partners; as
+  a biopharmaceutical research organization CytomX does not publish a public developer
+  API, so this profile carries company identity and domain-security posture rather
+  than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/cytomx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +33,39 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-industry: biopharmaceutical
+x-ticker: CTMX
+x-headquarters: South San Francisco, California, USA
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Oncology
+- Cancer Therapeutics
+- Clinical Stage
+- Life Sciences
 apis: []
+common:
+- type: DomainSecurity
+  url: security/cytomx-domain-security.yml
+- type: Website
+  url: https://cytomx.com
+- type: Blog
+  url: https://ir.cytomx.com/news-releases
+- type: Support
+  url: https://cytomx.com/contact/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cytomx-therapeutics
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
